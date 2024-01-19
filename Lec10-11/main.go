@@ -83,29 +83,29 @@ func main() {
 	// 	}
 	// }
 
-	// var (
-	// 	val   string
-	// 	count int
-	// 	a     bool
-	// 	b     int
-	// )
-	// fmt.Scan(&val)
-	// runeSlice := []rune(val)
-	// for _, v := range runeSlice {
-	// 	if v == 'о' {
-	// 		if a {
-	// 			count++
-	// 		}
-	// 		if b <= count {
-	// 			b = count + 1
-	// 		}
-	// 		a = true
-	// 	} else {
-	// 		count = 0
-	// 		a = false
-	// 	}
-	// }
-	// fmt.Println(b)
+	var (
+		val   string
+		count int
+		a     bool
+		b     int
+	)
+	fmt.Scan(&val)
+	runeSlice := []rune(val)
+	for _, v := range runeSlice {
+		if v == 'о' {
+			if a {
+				count++
+			}
+			if b <= count {
+				b = count + 1
+			}
+			a = true
+		} else {
+			count = 0
+			a = false
+		}
+	}
+	fmt.Println(b)
 
 	mihasMap := make(map[string]int)
 	mihasMap["Mihas"] = 37
